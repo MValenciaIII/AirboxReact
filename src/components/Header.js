@@ -5,9 +5,11 @@ function Header() {
 
 
     return(
-        <div className="row headerBackground py-4 align-items-center">
-            <Logo />
-            <NavBar />
+        <div className="container-fluid headerBackground py-4 align-items-center">
+            <div className="row">
+                <Logo />
+                <NavBar />
+            </div>
         </div>
     )
 }
@@ -15,9 +17,9 @@ function Header() {
 function Logo() {
 
     return(
-        <div className="col-6 logoCol ">
+        <div className="col-12 col-lg-6 logoCol ">
             <div className="row d-flex align-items-center">
-                <div className="col-4">
+                <div className="col-1">
                     <img className="img-fluid headerImg" src="https://mvalenciaiii.github.io/airbox/media/logo.png" alt="" />
                 </div>
                 <div className="col-8 ">
@@ -41,7 +43,7 @@ function NavBar() {
 
 
     return(
-        <div className="col-6 d-flex justify-content-center">
+        <div className="col-12 col-lg-6 d-flex justify-content-center">
             <ul className="list-group list-group-horizontal nav">
                 <li className="me-3"><a href="#">Home</a></li>
                 <li className="me-3"><a href="#">Web Hosting</a></li>
